@@ -116,3 +116,11 @@ h2 {
     right: 0;
     margin: 1rem;
 }
+@media screen and (max-width: 500px) {
+    .container > div {
+        grid-template-columns: 1fr;
+    }
+    .container > div > div {
+        grid-area: auto !important;
+    }
+}

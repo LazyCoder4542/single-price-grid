@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: hsl(204, 43%, 93%);
+    font-family: 'Karla', Verdana, Geneva, Tahoma, sans-serif;
+    color: hsl(0, 0%, 95%);
+    position: relative;
+}
+p {
+    color: hsl(218, 22%, 67%);
+    line-height: 1.25rem;
+}
+h1  {
+    font-size: 1.5rem;
+}
+h2 {
+    font-size: 1.2rem;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2.5rem 1rem 4rem;
+}
+.container > div {
+    border-radius: .5rem;
+    overflow: hidden;
+    width: 100%;
+    max-width: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.container > div > div {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem
+}
+.container > div > div:nth-child(1) {
+    background-color: hsl(0, 0%, 100%);
+    grid-column: 1/3;
+    gap: 1rem;
+}
+.container > div > div:nth-child(2) {
+    background-color: hsl(179, 62%, calc(43% - 2%));
+    gap: .75rem;
+}
+.container > div > div:nth-child(3) {
+    background-color: hsl(179, 62%, calc(43% + 2%));
+    gap: .5rem
+}
+.container > div > div:nth-child(1) h1 {
+    color: hsl(179, 62%, 43%);
+}
+.container > div > div:nth-child(1) > span:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.container > div > div:nth-child(1) h3 {
+    color: hsl(71, 73%, 54%);
+}
+.container > div > div:nth-child(2) > span:nth-child(2) {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: .5rem .5rem;
+    margin-bottom: auto;
+}
+.container > div > div:nth-child(2) > span:nth-child(2) > span:nth-child(1)  {
+    font-size: 2rem
+}
+.container > div > div:nth-child(2) > span:nth-child(2) > span:nth-child(2)  {
+    font-weight: 300;
+    opacity: 80%;
+}
+.container > div > div:nth-child(2) > span:nth-child(2) > span:nth-child(3)  {
+    font-weight: 300;
+    flex-basis: 100%;
+    font-size: 1rem;
+}
+.container > div > div:nth-child(2) > span:nth-child(3) > div {
+    display: inline-flex;
+    background-color: hsl(71, 73%, 54%);
+    padding: .75rem 2rem;
+    width: 100%;
+    justify-content: center;
+    border-radius: .25rem;
+    box-shadow: 2px 2px 10px hsl(0, 0%, 46%);
+    margin-top: 1rem;
+    cursor: pointer;
+    color: hsl(0, 0%, 100%);
+    transition: background 500ms;
+}
+.container > div > div:nth-child(2) > span:nth-child(3) > div:hover {
+    background-color: hsl(71, 73%,44%);
+}
+.container > div > div:nth-child(3) ul {
+    list-style: none;
+    font-weight: 300;
+    opacity: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+.container > div > div:nth-child(3) ul > li {
+    font-weight: inherit;
+}
+.attribution {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 1rem;
+}
